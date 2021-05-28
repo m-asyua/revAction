@@ -29,7 +29,7 @@ The accessURL was `http://localhost/revAction/revAction.php `
 in revAction.js 
 - intervalTime: 800
 
-　Interval time to access from JavaScript (Ajax). Do not use shorter interval times.
+　Interval time (ms) to access from JavaScript (Ajax). Do not use shorter interval times.
 
 - accessUrl: ` http://localhost/revAction/revAction.php `
   
