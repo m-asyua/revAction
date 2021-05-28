@@ -2,13 +2,12 @@
 
 
 
-Overview
+## Overview
 
 This is a JavaScript function to extract text information stored on a PC through a web server. This function is provided to JavaScript or IoT learners. For example, when information in a local text file updates on your PC, the information can be accessed through a web server using this JavaScript function. Other programs, such as PHP, are occasionally needed to extract such information. This page provides a sample PHP program. A web server, such as xampp, is needed.
 We use the JavaScript function to display updated acceleration sensor information on the web using IoT tools, such as MESH. The photograph indicates the MESH acceleration sensor values, as displayed on a webpage.
 
-Operating instructions
-
+## Operating instructions
 -	Prepare a web server (e.g., xampp)
 -	Copy the files (revAction.js, revAction.php, test.html, and sample.txt) in the document root directory ("C:\xampp\htdocs\).
 -	Edit the location of a local text file in revAction.php. 
@@ -19,12 +18,13 @@ The accessURL was "http://localhost/revAction/revAction.php"
 -	Access "http://localhost/revAction/test.html". Check for information changes upon updating the local text file.
 -	Customize “test.html”.
 
-Caution
+## Caution
 - Please refer to the access log in the web server, when you encounter some issues.
 - Please do not use shorter intervalTimes. They may increase web server load.
 - Do not set an intervalTime shorter than the browser limitation. For instance, the information updates were received within 5 s with Firefox browser, but not with other browsers.
 
-Options for customization
+
+## Options for customization
 
 in revAction.js 
 - intervalTime: 800
@@ -37,6 +37,13 @@ in test.html
 - The information can be obtained using the following function. Use updated_information further.
 
 
+'
+my_revAction.prototype.onChange = function (s) {
+
+// sample
+    document.getElementById("test_message").innerHTML += s +"<br />";
+
+'
 
 
 
@@ -48,7 +55,7 @@ in revAction.php
 For instance, for a file located at "c:\xampp\htdocs\revAction\test.txt",
 use "c:\\xampp\\htdocs\\revAction\\test.txt" as path. 
 
-Comments from the Author
+## Comments from the Author
 We created a tool to display the information updates using an IoT tool (MESH) and revAction function. We tried to use IFTTT libraries; however, it did not work the way we expected. Therefore, we used revAction for displaying the information on the webpage.
 
 
