@@ -14,8 +14,8 @@ We use the JavaScript function to display updated acceleration sensor informatio
 "C:\\xampp\\htdocs\\revAction\\sample.txt" is the default location.
 -	Edit the interval time (intervalTime) and access PHP URL (accessUrl) in revAction.js.
 The default intervalTime was 800 ms. 
-The accessURL was "http://localhost/revAction/revAction.php"
--	Access "http://localhost/revAction/test.html". Check for information changes upon updating the local text file.
+The accessURL was "http ://localhost/revAction/revAction.php"
+-	Access "http ://localhost/revAction/test.html". Check for information changes upon updating the local text file.
 -	Customize “test.html”.
 
 ## Caution
@@ -29,7 +29,7 @@ The accessURL was "http://localhost/revAction/revAction.php"
 in revAction.js 
 - intervalTime: 800
    Interval time to access from JavaScript (Ajax). Do not use shorter interval times.
-- accessUrl: “http://localhost/revAction/revAction.php"
+- accessUrl: “http ://localhost/revAction/revAction.php"
    Webpage to access using JavaScript (Ajax).
 
 in test.html 
@@ -37,13 +37,13 @@ in test.html
 - The information can be obtained using the following function. Use updated_information further.
 
 
-'
+`
 my_revAction.prototype.onChange = function (s) {
 
 // sample
     document.getElementById("test_message").innerHTML += s +"<br />";
 
-'
+`
 
 
 
