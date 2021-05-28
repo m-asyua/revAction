@@ -1,0 +1,24 @@
+<script src="revAction.js"></script>
+
+
+<div id="test_message" ></div>
+
+<script>
+
+   my_revAction.prototype.start();
+
+
+
+var str_tmp = "";
+
+my_revAction.prototype.onChange = function (s) {
+
+    // sample
+    if(str_tmp!=s){
+        document.getElementById("test_message").innerHTML +=  s "<br />";
+       str_tmp=s;
+    }
+
+}
+</script>
+
