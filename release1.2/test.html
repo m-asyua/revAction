@@ -1,0 +1,27 @@
+<html>
+   
+<script src="revAction.js"></script>
+
+<script>
+
+var str_tmp = "";
+
+my_revAction.prototype.onChange = function (s) {
+
+    // sample
+
+    if(str_tmp != s){
+        document.getElementById("test_message").innerHTML +=  s + "<br />";
+       str_tmp = s;
+    }
+
+}
+</script>
+
+<body>
+      
+    <div id="test_message" ></div>
+
+</body>
+   
+</html>
