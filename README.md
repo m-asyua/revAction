@@ -11,7 +11,7 @@ We use the JavaScript function to display updated acceleration sensor informatio
 -	Prepare a web server (e.g., xampp)
 -	Copy the files (revAction.js, revAction.php, test.html, and sample.txt) in the document root directory ("C:\xampp\htdocs\).
 -	Edit the location of a local text file in revAction.php. 
-"C:\\xampp\\htdocs\\revAction\\sample.txt" is the default location.
+"C:\\xampp\\htdocs\\revAction\\sample.txt" is the default (sample) location.
 -	Edit the interval time (intervalTime) and access PHP URL (accessUrl) in revAction.js.
 The default intervalTime was 800 ms. 
 The accessURL was `http://localhost/revAction/revAction.php `
