@@ -56,7 +56,7 @@ in revAction.php
 -	Please specify the local text file location.
 -	Caution: Please use double backslash in the file path. The first one escapes the second to imply an actual backslash.
 For instance, for a file located at "c:\xampp\htdocs\revAction\test.txt",
-use "c:\\xampp\\htdocs\\revAction\\test.txt" as path. 
+use "c:\ \xampp\ \htdocs\ \revAction\ \test.txt" as path. 
 
 ## Comments from the Author
 We created a tool to display the information updates using an IoT tool (MESH) and revAction function. We tried to use IFTTT libraries; however, it did not work the way we expected. Therefore, we used revAction for displaying the information on the webpage.
